@@ -1,0 +1,54 @@
+% document.tex
+% This is the root of the document for my boilerplate lab report.
+% Author: Dennis Ogbe, dogbe@purdue.edu
+
+\documentclass[12pt]{article}
+\usepackage{boilerp} % all of the formatting info is in ./boilerp.sty
+
+% Bibliography file 'references.bib' in working directory
+\bibliography{references}
+\nocite{*} % show all of the references, even when not used
+
+% Page header & footer
+\pagestyle{fancy}
+\fancyhead[LH]{Project: Generator Excitation Control} % left header
+\rhead{ECE 4210 Control System Design I, Fall 2013} % right header
+\fancyfoot[CF]{\thepage}
+
+\begin{document}
+
+% the title page
+  \input{./title/title.tex}
+
+% table of contents etc.
+\newpage
+\tableofcontents
+\newpage
+% \listoffigures
+% \newpage
+% \listoftables
+% \newpage
+
+% include the different sections
+  \input{./tex/abstract.tex}
+  \input{./tex/backround.tex}
+  \input{./tex/introduction.tex}
+  \input{./tex/characteristics.tex}
+  \input{./tex/instrumentation.tex}
+  \input{./tex/modeling.tex}
+  \input{./tex/control.tex}
+  \input{./tex/conclusion.tex}
+
+% bibliography - using biblatex to include URLs
+\newpage
+\printbibliography[heading=bibintoc]
+
+% the appendix, also optional
+\newpage
+\section*{Appendix}
+\begin{appendices}
+
+  \input{./tex/appendixtest.tex}
+
+\end{appendices}
+\end{document}

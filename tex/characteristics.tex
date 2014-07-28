@@ -1,0 +1,80 @@
+\section{Characteristics of a Generator System}
+Synchronous generators or alternators are synchronous machines used to convert mechanical power to AC electrical power. A DC current is applied to the rotor winding, which produces a rotor magnetic field. The rotor of the generator is then turned by a prime mover, producing a rotating magnetic field within the machine. This rotating magnetic field induces a three-phase set of voltages within the stator windings of the generator \cite{machinery}.
+
+The rotor of a synchronous machine is a large electromagnet. The magnetic poles can be either salient or non-salient construction. Two common approaches used to supply a DC current to the field circuits on the rotating rotor. The first method is to supply the DC power from an external DC source to the rotor by means of slip rings and brushes. The second method is to supply the DC power from a special DC power source mounted directly on the shaft of the machine \cite{machinery}.
+
+By definition, synchronous generators produce electricity whose frequency is synchronized with the mechanical rotational speed. The rate of rotation of the magnetic fields in the machine is related to the stator electrical frequency by Equation \eqref{eq:1} \cite{machinery}:
+
+\begin{equation}\label{eq:1}
+f_e = \frac{n_m P}{120}
+\end{equation}
+
+Where \begin{math}f_e\end{math} is the electrical frequency in Hz, \begin{math}n_m\end{math} is the mechanical speed of magnetic field, in r/min, and P is the number of poles. Equation (1) shows that 60 Hz power can be produced by rotating the shaft at 3600 r/min for a 2-pole machine and at 1800 r/min for a 4-pole machine.
+
+The peak voltage produced by the generator is represented by Equation \eqref{eq:2} \cite{machinery}:
+
+\begin{equation}\label{eq:2}
+E_{max} = N_c\Phi\omega_m
+\end{equation}
+
+The RMS voltage is represented by Equation \eqref{eq:3}:
+
+\begin{equation}\label{eq:3}
+E_{A} = K\Phi\omega
+\end{equation}
+
+Where \begin{math}K\end{math} is a constant representing the construction of the machine, \begin{math}\Phi\end{math} is flux, and \begin{math}\omega\end{math} is rotation speed.
+
+The internal generated voltage \begin{math}E_A\end{math} is directly proportional to the flux and to the speed, but the flux itself depends on the current flowing in the rotor field circuit. The voltage in a single phase of a synchronous machine is not usually the voltage appearing at its terminals. It equals the output voltage \begin{math}V_\Phi\end{math} only when there is no armature current in the machine. This is due to distortion of the air-gap magnetic field caused by the current flowing in the stator, self-inductance of the armature coils, and the resistance of the armature coils \cite{machinery}.
+
+The phase voltage of a synchronous generator is given by Equation \eqref{eq:4} \cite{machinery}:
+
+\begin{equation}\label{eq:4}
+V_\varphi = E_A - jX_s I_A - R_A I_A
+\end{equation}
+
+where \begin{math}X_s\end{math} represents the armature reaction effects and the self-inductance in the machine. It is customary to combine them into a single reactance called the synchronous reactance of the machine \cite{machinery}:
+
+\begin{equation}\label{eq:5}
+X_s = X + X_A
+\end{equation}
+
+The terminal voltage \begin{math}V_T\end{math} will be \begin{math}\sqrt{3} V_\varphi\end{math} for a Y connected synchronous generator and remain \begin{math}V_\varphi\end{math} for a delta connected synchronous generator.
+
+Three quantities must be determined in order to correctly describe the generator model. They are as follows: The relationship between field current and flux, the synchronous reactance, and the armature resistance. The behavior of a synchronous generator varies under load depending on the power factor of the load and on whether the generator is working alone or in parallel with other synchronous generators. Our system will have a sole synchronous generator operating alone. An increase in the load is an increase in the real and reactive power drawn from the generator. When a load is added the phase and terminal voltage for lagging, inductive loads decreases significantly. For purely resistive, unity power factor loads the phase and terminal voltage decreases slightly. For leading, capacitive loads, the phase and terminal voltage rises. The effects of adding loads can be described by the voltage regulation \cite{machinery}:
+
+\begin{equation}\label{eq:6}
+VR = \frac{V_{nl}-V_{fl}}{V_{fl}} 100\%
+\end{equation}
+
+Where \begin{math}V_{nl}\end{math} is the no load voltage of the generator and \begin{math}V_{fl}\end{math} is its full load voltage.
+
+A synchronous generator operating at a lagging power factor has a fairly large positive voltage regulation while a synchronous generator operating at a leading power factor often has a negative voltage regulation. A synchronous generator operating at a unity power factor has a small positive voltage regulation. Because a constant terminal voltage supplied by a generator is desired and the armature reactance cannot be controlled, the terminal voltage can be controlled using the internal generated voltage,\begin{math} E_A=K\varphi\omega\end{math}. This is done by changing flux in the machine while varying the value of the field resistance, \begin{math}R_F\end{math}. Decreasing the field resistance 	increases the field current in the generator. An increase in the field current increases the flux in the machine. An increased flux leads to the increase in the internal generated voltage. An increase in the internal generated voltage increases the terminal voltage of the generator \cite{machinery}.
+
+The real output power of the synchronous generator is:
+
+\begin{equation}\label{eq:7}
+P_{out} = \sqrt{3}V_T I_L \cos\theta = 3V_\varphi I_A \cos\theta
+\end{equation}
+
+The reactive output power of the synchronous generator is \cite{machinery}:
+
+\begin{equation}\label{eq:8}
+Q_{out} = \sqrt{3} V_T I_L \sin\theta = 3V_\varphi I_A \sin\theta
+\end{equation}
+
+In real synchronous machines of any size, the armature resistance \begin{math}R_A <<  X_s\end{math}, therefore, the armature resistance can be ignored. Thus a simplified phasor diagram indicates that \cite{machinery}
+
+\begin{equation}\label{eq:9}
+I_A \cos\theta = \frac{E_A \sin\delta}{X_s}
+\end{equation}
+
+Then the real output power of the synchronous generator can be approximated as \cite{machinery}
+
+\begin{equation}\label{eq:10}
+P_{out} = \frac{3 V_\varphi E_A \sin\delta}{X_s}
+\end{equation}
+
+Here \begin{math}\delta\end{math} is the torque angle of the machine, the angle between \begin{math}V_\varphi\end{math}  and \begin{math}E_A\end{math}.
+
+

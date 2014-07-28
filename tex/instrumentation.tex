@@ -1,0 +1,6 @@
+\section{Instrumentation}
+Instrumentation is "the art and science of measurement and control" \cite{heitkamp}. In the scope of electrical control systems, instrumentation is the part of a system that measures the quantity that is to be controlled and that provides feedback about the value of that quantity to the control system. In most cases, the instrument of choice for a control system is some kind of sensor. Sensors come in many different varieties like temperature sensors, humidity sensors, altimeters etc. Since electrical control systems work with electrical signals, a sensor must be combined with a transducer that produces an electric signal relative to the measured quantity.
+
+The quantity that is to be measured and controlled in this project is the terminal voltage of the generator. The instrument of choice in this case needs to able to measure the voltage of an electric signal and output a signal relative to that voltage. This device is called a "voltage transducer". The voltage transducer is at its core a voltmeter, but instead of providing the output on a numeric display, the output is an electrical signal that can be used in a control loop \cite{systematic}. Since the control system were to be implemented using the LabVIEW softwar, we use a I/O module that contains voltage transducers for use on a general-purpose computer \cite{labview}.
+
+

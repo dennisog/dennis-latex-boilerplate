@@ -1,0 +1,44 @@
+fonts.txt
+This file just gives an overview over the available fonts in TeXlive, stolen
+from SO.
+
+arev - Arev, a sans-serif font (*) with math enhancements; derived from Bitstream Vera Sans
+avant - Sets the sans-serif font to Avant Garde
+bera - Bera Serif (roman,*), Bera Sans (sans-serif), Bera Mono (typewriter); derived from Bitstream Vera; math font: Computer Modern
+bookman - roman font: Bookman (*), sans-serif font: Avant Garde, typewriter font: Courier
+cabin - Sets the sans-serif font to Cabin
+chancery - roman font: Chancery (*)
+charter - roman font: Charter (*)
+cmbright - CM Bright, lighter sans-serif variant of Computer Modern Sans Serif (sans-serif, *), CM Typwewriter Light (typewriter)
+concrete - Concrete Roman (roman,*) with Euler (math)
+courier - typewriter font: Courier
+dejavu - DejaVu Serif (roman,*), DejaVu Sans (sans-serif), DejaVu Sans Mono (typewriter); derived from Bitstream Vera
+droid - Droid Serif (roman,*), Droid Sans (sans-serif), Droid Sans Mono(typewriter)
+ebgaramond - roman font: EB Garamond (*)
+euler - Math font
+fourier - Sets the serif font to Adobe Utopia (*) and the math font to Fourier (designed to be compatible with Utopia)
+fouriernc Sets the serif font to (a clone of) NewCentury Schoolbook (*) and the math font to Fouriernc (designed to be compatible with NewCentury)
+helvet - Helvetica
+inconsolata - set typewriter font to inconsolata
+kpfonts - roman (*), sans-serif and typewriter font from the Kepler Project, text and math symbols
+lato - sans-serif font
+libertineotf (obsolete) - (Open Type) Linux Libertine (roman,*), Linux Biolinum (sans-serif), and Libertine Mono (typewriter)
+libertine - (Type 1 & Open Type) Linux Libertine (roman,*) and Linux Biolinum (sans-serif), and Libertine Mono (typewriter)
+librebaskerville - roman font: Libre Baskerville (*)
+lmodern - almost identical fonts to Computer Modern (the default TeX fonts), but in Type1 format (outline).
+mathdesign - text and maths fonts, versions for Charter, Garamond and Utopia.
+mathpazo - changes roman font to Palatino (*), math to something matching.
+mathptmx - roman font is Times (*), math is basically Times Italic, with the missing math symbols coming from Computer Modern, RSFS (for \mathcal) and Adobe Symbol
+newcent - roman font: New Century Schoolbook (*), sans-serif: Avant Garde, typewriter: Courier
+newtx Provides, with the package newtxtext Young Ryu's TXfonts, but with modified metrics (*=Times Roman). Similarly, newtxmath provides the TXfonts math companion fonts with modified metrics. The sans-serif font is based on Helvetica and the typewriter font is especially created.
+quattrocento - Quattrocento (roman,*), Quattrocento Sans (sans-serif)
+tgadventor Sets the sans-serif font to TeX Gyre Adventor (clone of AvantGarde)
+tgbonum Sets the serif font to TeX Gyre Bonum (clone of Bookman,*)
+tgchorus Sets the serif font to TeX Gyre Chorus (clone of Zapf Chancery,*)
+tgcursor Sets the typewriter type font to TeX Gyre Cursor (clone of Courier)
+tgheros Sets the sans-serif font to TeX Gyre Heros (clone of Helvetica)
+tgpagella Sets the serif font to TeX Gyre Pagella (clone of Palatino,*)
+tgschola Sets the serif font to TeX Gyre Schola (clone of New Century Schoolbook,*)
+tgtermes Sets the serif font to TeX Gyre Termes (clone of Times,*)
+times (obsolete) - changes roman to Times (*), sans-serif to Helvetica and typewriter to Courier
+yfonts - provides Yiannis Haralambous's rendering of Fraktur, Schwabacher and Gotische and a set of beautiful initials.

@@ -1,0 +1,57 @@
+% boilerp.sty
+% the 'boilerp' style. standard settings for lab reports, theses, etc.
+% Author: Dennis Ogbe, dogbe@purdue.edu
+
+\ProvidesPackage{boilerp}
+
+% geometry
+\usepackage[margin=1in]{geometry}
+
+% fonts
+\usepackage{kpfonts}      % main font
+\usepackage{inconsolata}  % typewriter font
+\usepackage{euler}        % math font
+
+% table of contents
+\usepackage[titletoc]{appendix} % include appendices in TOC
+\usepackage[nottoc,numbib]{tocbibind} % include References in TOC
+\usepackage{tocloft}
+\usepackage{caption}
+\usepackage{placeins}
+\renewcommand{\cftsecleader}{\cftdotfill{\cftdotsep}} % Add dots to TOC
+
+% other settings
+\usepackage[T1]{fontenc}
+\usepackage{graphicx}    % needed for including graphics e.g. EPS, PS
+\usepackage{fancyhdr}
+\usepackage{mcode} % for matlab code
+\usepackage{verbatim}
+\usepackage{url}
+\usepackage{array}
+\usepackage{hyperref}
+\usepackage{mathtools} % for math equations
+\usepackage{scrextend} % to add indent in the title page
+
+% use BiBLaTeX instead of BiBTeX
+\usepackage[style=numeric-comp,citestyle=numeric,backend=bibtex]{biblatex}
+
+% Define horizontal lines for title page
+\renewcommand{\headrulewidth}{0.4pt}
+\renewcommand{\footrulewidth}{0.4pt}
+\newcommand{\HRule}{\rule{\linewidth}{0.4pt}}
+
+% example to change the way that C-type files are being displayed
+\lstdefinestyle{customc}{
+  captionpos=b,
+  breaklines=true,
+  frame=L,
+  xleftmargin=\parindent,
+  numbers=left,
+  language=C,
+  showstringspaces=false,
+  basicstyle=\footnotesize\ttfamily,
+  keywordstyle=\bfseries\color{green!40!black},
+  commentstyle=\itshape\color{purple!40!black},
+  identifierstyle=\color{blue},
+  stringstyle=\color{orange},
+}

@@ -1,0 +1,7 @@
+\section{Appendix Test}
+The variable \textit{bufferSize} contains the number of samples needed to archive the desired time duration. Recall the plot of the windowed signal in Figure \ref{fig:test_data} It is obvious that the spectrum analyzer would not display the spectrum of a signal correctly if it would take \textit{bufferSize} samples, perform spectral analysis, then take the next \textit{bufferSize} samples, perform spectral analysis and so on. The window function "pinches off" at the beginning and the end, which means that the information at signal components at the beginning and the end of the signal chunk would be lost.
+
+I also want to test out the code feature: let's see how this works:
+\lstinputlisting[caption=The \textit{process\_samples} function,style=customc,label=lst:process_samples]{./code/process_samples.c}
+
+To counteract this effect, spectral analysis is performed on a window of \textit{bufferSize} samples, every time a new set of \textit{bufferSize/2} samples is acquired. This creates an overlapping effect and ensures that no information is lost due to windowing. Listing \ref{fig:sys} shows the relevant part of the \textit{process\_samples} function, where the circular buffer is filled and the samples for spectral analysis are prepared.
